@@ -46,4 +46,7 @@ function type() {
     // Infinite loop...
     setTimeout(type, delay);
 }
-type();
+
+document.addEventListener('DOMContentLoaded', function () {
+	setTimeout(type, 1000);
+})
